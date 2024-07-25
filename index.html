@@ -7,8 +7,8 @@
     <title>Lab 03</title>
 
     <!-- Meta Tags -->
-    <meta name="author" content="...">
-    <meta name="description" content="...">
+    <meta name="author" content="Dan Nguyen | dnguyen94@nait.ca">
+    <meta name="description" content="This website demonstrates how to create a fully responsive navigation.">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -20,7 +20,102 @@
 </head>
 
 <body>
-    
+    <header>
+        <div class="inner-container wide-flex">
+            <div class="flex-container">
+                <h1><a href="index.html">eSports</a></h1>
+                <div class="menu-icon">
+                    <img class="svg" src="/img/joystick-logo.svg" alt="menu">
+                    <p>Menu</p>
+                </div>
+            </div>
+            <nav class="wide-flex">
+                <h2 class="sr-only">Main Menu</h2>
+                <ul class="main-menu">
+                    <!-- Games menu -->
+                    <li>
+                        <a href="#" class="first-link">
+                            <img src="img/pink-circle.svg" alt="games">
+                            GAMES
+                        </a>
+                        <!-- Games submenu -->
+                        <ul class="second-tier">
+                            <li>
+                                <a href="#">CS:GO</a>
+                            </li>
+                            <li>
+                                <a href="#">DOTA 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Fortnite</a>
+                            </li>
+                            <li>
+                                <a href="#">League of Legends</a>
+                            </li>
+                            <li>
+                                <a href="#">Overwatch</a>
+                            </li>
+                            <li>
+                                <a href="#">Pokémon</a>
+                            </li>
+                            <li>
+                                <a href="#">PUBG</a>
+                            </li>
+                        </ul> <!-- end of submenu -->
+                    </li> <!-- end of menu -->
+
+                    <!-- Schedule menu -->
+                    <li>
+                        <a href="#" class="first-link">
+                            <img src="img/yellow-circle.svg" alt="schedule">
+                            SCHEDULE
+                        </a>
+                        <!-- Schedule submenu -->
+                        <ul class="second-tier">
+                            <li>
+                                <a href="#">Australia & EU</a>
+                            </li>
+                            <li>
+                                <a href="#">East Asia</a>
+                            </li>
+                            <li>
+                                <a href="#">North America</a>
+                            </li>
+                        </ul> <!-- end of submenu -->
+                    </li> <!-- end of menu -->
+
+                    <!-- Register menu -->
+                    <li>
+                        <a href="#" class="first-link">
+                            <img src="img/green-circle.svg" alt="register">
+                            REGISTER
+                        </a>
+                        <!-- Schedule submenu -->
+                        <ul class="second-tier">
+                            <li>
+                                <a href="#">Individual Competitors</a>
+                            </li>
+                            <li>
+                                <a href="#">Team Events</a>
+                            </li>
+                        </ul> <!-- end of submenu -->
+                    </li> <!-- end of menu -->
+                </ul> <!-- end of .main-menu -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Main Content Here -->
+        <section class="banner">
+            <div>
+                <h2>eSports League</h2>
+                <p>Get your head in the game! Register a an individual competitor or for a team event in an upcoming tournament near you.</p>
+                <a class="button" href="#">
+                    <div>Register Now</div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
