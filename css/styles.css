@@ -1,7 +1,7 @@
 /* NOTE: Make sure that when you complete your Lab, you leave a comment at the top of this file listing which new properties you used! */
 /*
   New properties used:
-  backdrop-filter: Used in the 'blur' div to blur the background a bit.
+  backdrop-filter: Used in the 'blur' div to blur the background banner a bit.
 */
 
 :root {
@@ -60,6 +60,10 @@ h2::first-letter {
   color: var(--hot-pink);
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 .menu-icon {
   color: #fff;
   cursor: pointer;
@@ -99,7 +103,9 @@ header img {
   padding: 2rem;
   margin: 12rem 3rem 12rem 3rem;
   text-align: center;
-  color: var(--dk-grey)
+  color: var(--dk-grey);
+  min-height: 25rem;
+  max-width: 30rem;
 }
 
 .button {
@@ -111,6 +117,7 @@ header img {
   padding: 1rem;
   border-radius: 5rem;
   margin: 1rem 0;
+  min-width: 13rem;
 }
 
 a>img {
@@ -132,6 +139,10 @@ nav li {
   margin: 0.5rem 0;
 }
 
+.first-link {
+  font-weight: 800;
+}
+
 ul>li>ul {
   margin-left: 2rem;
 }
@@ -141,4 +152,96 @@ ul>li>ul {
   opacity: 1;
   transition: opacity 1s;
   overflow: visible;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 720px) {
+  .banner {
+    min-height: 92.7vh;
+  }
+
+  .blur {
+    min-height: 92.7vh;
+  }
+
+  .wide-flex {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  header div.inner-container {
+    max-width: 60rem;
+  }
+
+  header div.inner-container>.flex-container {
+    flex: 1 0 auto;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+    position: static;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .show-nav {
+    max-height: 0;
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-left: 5rem;
+  }
+
+  .main-menu li {
+    justify-content: center;
+  }
+
+  .main-menu>li {
+    margin: 1rem;
+  }
+
+  .second-tier {
+    min-width: 100%;
+    margin: 0 15% 0rem -1rem;
+    visibility: hidden;
+    display: inline-block;
+    background-color: var(--dk-grey);
+  }
+
+  .second-tier li {
+    padding: 1rem 3rem 0 2rem;
+  }
+
+  .main-menu li:hover>.second-tier {
+    visibility: visible;
+  }
+}
+
+
+/* LARGEST VIEW */
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+
+  nav {
+    max-width: 1024px;
+  }
+
+  .banner {
+    min-height: 93.1vh;
+  }
+
+  .blur {
+    min-height: 93.1vh;
+  }
 }
